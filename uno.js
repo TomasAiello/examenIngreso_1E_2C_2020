@@ -33,9 +33,10 @@ function mostrar() {
 				contf++;
 			}
 			else {
-				if (flago == 0 || maxpeso < peso) {
+				if (flag == 0 || maxpeso < peso) {
 					maxpeso = peso;
 					nommaxpeso = nom;
+					flag = 1;
 				}
 			}
 
