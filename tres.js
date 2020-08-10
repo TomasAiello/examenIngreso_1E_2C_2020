@@ -52,7 +52,7 @@ function mostrar() {
 
 			}
 
-		} while (!(lugar == "bariloche" || lugar == "cataratas" || lugar == "salta"))
+		} while (!(lugar == "bariloche" || lugar == "cataratas" || lugar == "salta"));
 
 		do {
 			temp = prompt("ingrese la temporada en la que desea viajar: otoño/invierno/verano/primavera");
