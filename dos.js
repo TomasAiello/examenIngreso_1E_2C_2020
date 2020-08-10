@@ -15,7 +15,8 @@ c)la marca del más barato de los sólidos
   let acumpeso = 0;
   let maxliquido;
   let marcamaxliquido;
-  let flag = 0;
+  let flagli = 0;
+  let flagso = 0;
 
   let minsolido;
   let marcaminsolido;
@@ -32,19 +33,19 @@ c)la marca del más barato de los sólidos
 
       switch (tipo) {
         case "liquido":
-          if (flag == 0 || maxliquido < precio) {
+          if (flagli == 0 || maxliquido < precio) {
             maxliquido = precio;
             marcamaxliquido = marca;
-            flag = 1;
+            flagli = 1;
           }
           break;
         case "solido":
-          if (flag == 0 || minsolido > precio) {
+          if (flagso == 0 || minsolido > precio) {
             minsolido = precio;
             marcaminsolido = marca;
-            flag = 1;
+            flagso = 1;
           }
-        break;
+          break;
       }
 
 
