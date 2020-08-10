@@ -56,7 +56,7 @@ function mostrar() {
 	document.write("la edad promedio en total es: " + promedio);
 
 	//C
-	document.write("el hombre mas pesado es: " + nommaxpeso + "y su peso es: " + maxpeso);
+	document.write("el hombre mas pesado es: " + nommaxpeso + "y su peso es: " + maxpeso "Kg.");
 
 
 
