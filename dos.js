@@ -39,7 +39,7 @@ c)la marca del más barato de los sólidos
           }
           break;
         case "solido":
-          if(flag == 0 || minsolido > precio){
+          if (flag == 0 || minsolido > precio) {
             minsolido = precio;
             marcaminsolido = marca;
             flag = 1;
@@ -50,7 +50,7 @@ c)la marca del más barato de los sólidos
     } while (!(tipo == "solido" || tipo == "liquido"));
 
 
-    resp = alert("quiere ingresar otro producto? s/n");
+    resp = prompt("quiere ingresar otro producto? s/n");
   } while (resp == "s");
 
   //A
