@@ -42,6 +42,7 @@ c)la marca del más barato de los sólidos
           if(flag == 0 || minsolido > precio){
             minsolido = precio;
             marcaminsolido = marca;
+            flag = 1;
           }
       }
 
