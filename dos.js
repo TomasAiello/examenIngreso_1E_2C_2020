@@ -44,6 +44,7 @@ c)la marca del más barato de los sólidos
             marcaminsolido = marca;
             flag = 1;
           }
+        break;
       }
 
 
