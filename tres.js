@@ -72,9 +72,8 @@ function mostrar() {
 			sexomax = sexo;
 		}
 
-
 		resp = prompt("quiere ingresar otra estadia? s/n");
-	} while (resp == "s")
+	} while (resp == "s");
 
 	//A
 
@@ -82,7 +81,7 @@ function mostrar() {
 		lugarmax = "salta";
 	}
 	else if (contcata > contsalta && contcata > contbari) {
-		lugarmax = "salta";
+		lugarmax = "cataratas";
 	}
 	else {
 		lugarmax = "bariloche";
