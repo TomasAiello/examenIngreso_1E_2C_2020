@@ -33,7 +33,7 @@ function mostrar() {
 
 	do {
 		do {
-			sexo = prompt("ingrese sexo del titular: s/n");
+			sexo = prompt("ingrese sexo del titular: m/f");
 		} while (!(sexo == "m" || sexo == "f"));
 
 		do {
@@ -96,9 +96,6 @@ function mostrar() {
 	//C
 	if(acumper !=0 && contviaje != 0){
 		alert("el promedio de personas por viaje, que viajan en invierno es: " + promedio);
-	}
-
-
-
+	}	
 
 }
