@@ -64,7 +64,7 @@ function mostrar() {
 			}
 
 
-		} while (!(temp == "otoño" || temp == "invierno" || temp == "verano" || tipo == "primavera"));
+		} while (!(temp == "otoño" || temp == "invierno" || temp == "verano" || temp == "primavera"));
 
 		cant = parseInt(prompt("ingrese la cantidad de personas que viajan"));
 		if (flag == 0 || cantmax < cant) {
