@@ -22,6 +22,15 @@ function mostrar() {
 
 	let lugarmax = "";
 
+	let cantmax;
+	let sexomax;
+	let flag = 0;
+
+	let promedio;
+	let acumper = 0; // acumulador de personas 
+	let contviaje = 0;
+
+
 	do {
 		do {
 			sexo = prompt("ingrese sexo del titular: s/n");
@@ -47,10 +56,21 @@ function mostrar() {
 
 		do {
 			temp = prompt("ingrese la temporada en la que desea viajar: otoño/invierno/verano/primavera");
+
+			if(temp == "invierno"){
+				acumper = acumper + cant;
+				contviaje++;
+				promedio = acumper/contviaje;
+			}
+
+
 		} while (!(temp == "otoño" || temp == "invierno" || temp == "verano" || tipo == "primavera"));
 
 		cant = parseInt(prompt("ingrese la cantidad de personas que viajan"));
-
+		if (flag == 0 || cantmax < cant) {
+			cantmax = cant;
+			sexomax = sexo;
+		}
 
 
 		resp = prompt("quiere ingresar otra estadia? s/n");
@@ -64,14 +84,20 @@ function mostrar() {
 	else if (contcata > contsalta && contcata > contbari) {
 		lugarmax = "salta";
 	}
-	else{
+	else {
 		lugarmax = "bariloche";
 	}
 
 	alert("el lugar mas elegido es: " + lugarmax);
 
 	//B
-	
+	alert("el sexo del titular que lleva mas pasajeros es: " + sexomax);
+
+	//C
+	if(acumper !=0 && contviaje != 0){
+		alert("el promedio de personas por viaje, que viajan en invierno es: " + promedio);
+	}
+
 
 
 
